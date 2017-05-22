@@ -1,10 +1,10 @@
 {
   "name": "customvision-micro",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "microservice capable of interacting with customvision models",
   "main": "index.js",
   "scripts": {
-    "start": "micro",
+    "start": "node ./node_modules/micro/bin/micro.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ben Greenier",
@@ -13,5 +13,8 @@
     "micro": "^7.3.3",
     "microrouter": "^2.1.1",
     "superagent": "^3.5.2"
+  },
+  "engines": {
+    "node": "^7.10.0"
   }
 }
