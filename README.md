@@ -1,5 +1,7 @@
 # customvision-micro
 
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/bengreenier/customvision-micro)
 
 A microservice (:microscope: :cloud:) capable of interacting with a [customvision.ai](https://customvision.ai) model.
