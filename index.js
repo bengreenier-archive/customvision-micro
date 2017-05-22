@@ -15,7 +15,7 @@ const predictionClient = new apis.prediction.DefaultApi()
 
 module.exports = router(
     get('/', (req, res) => {
-        res.setHeader('Location', 'https://github.com/catalystcode/whatfood-micro')
+        res.setHeader('Location', 'https://github.com/bengreenier/customvision-micro')
         res.statusCode = 301
         res.end()
     }),
