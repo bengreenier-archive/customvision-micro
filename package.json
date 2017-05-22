@@ -1,15 +1,16 @@
 {
   "name": "customvision-micro",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "microservice capable of interacting with customvision models",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/micro/bin/micro.js",
+    "start": "cross-var node ./node_modules/micro/bin/micro.js --port $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ben Greenier",
   "license": "MIT",
   "dependencies": {
+    "cross-var": "^1.0.3",
     "micro": "^7.3.3",
     "microrouter": "^2.1.1",
     "superagent": "^3.5.2"
