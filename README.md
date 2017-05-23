@@ -34,8 +34,6 @@ npm WARN customvision-micro@0.1.0 No repository field.
 > customvision-micro@0.1.0 start C:\Users\begreen\git
 > micro
 
-302f8aa4055a85ed2cb8b7feb22e64be 3af3ed83f56aaa024439a8b2fbd205d6 a4b6e333-7a61-4ac7-99bb-3087cb7c0812
-
    ┌───────────────────────────────────────────────────┐
    │                                                   │
    │   Micro is running!                               │
@@ -124,6 +122,34 @@ Host: localhost:3000
   },
   "Status": "OKDuplicate"
 }
+```
+
+## CORS
+
+> If you aren't sure what CORS refers to, read [this](https://www.w3.org/TR/cors).
+
+This service ships by default with very open CORS headers, which makes it easy to work with, but less secure.
+If you'd like to lock things down, here's how:
+
+1) set `ALLOWED_ORIGIN` to the origin you wish to grant access to. By default, this is `*`
+2) set `ALLOWED_METHODS` to the comma separated methods you wish to allow. By default this is `POST,GET,PUT,DELETE,OPTIONS`
+3) set `ALLOWED_HEADERS` to the comma separated headers you wish to allow. By default this is `X-Requested-With,Access-Control-Allow-Origin,X-HTTP-Method-Override,Content-Type,Authorization,Accept`
+4) restart the service
+
+For example:
+
+```
+C:\Users\begreen\git
+λ set ALLOWED_ORIGIN=myorigin.com
+
+C:\Users\begreen\git
+λ set ALLOWED_METHODS=POST,GET
+
+C:\Users\begreen\git
+λ set ALLOWED_HEADERS=Content-Type,Authorization,Accept
+
+C:\Users\begreen\git
+λ npm start
 ```
 
 ## License
